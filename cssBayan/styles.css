@@ -1,1 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+}
+
+h1,
+h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: rgb(240, 240, 210);
+}
+
+h1 {
+    font-size: 4vw;
+    font-weight: 800;
+    text-align: left;
+    padding-bottom: 3%;
+    color: black;
+}
+
+h2 {
+    font-size: 3.5vw;
+    font-weight: 600;
+    padding: 2.5% 0;
+    color: blue;
+    transition: 0.5s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.bottom__line {
+    background-color: #bebbbb;
+    display: block;
+    height: 0.05em;
+    width: 100%;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.plus {
+    opacity: 0;
+    background-image: url("./img/plus.svg");
+    width: 1.5em;
+    height: 1.5em;
+    background-size: 1.5em 1.5em;
+    transform: rotate(0deg);
+    transition: .5s;
+}
+
+.accordion__item {
+    cursor: pointer;
+}
+
+label input {
+    display: flex;
+    align-items: center;
+    appearance: none;
+}
+
+.accordion__content {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label input:checked~.accordion__content {
+    height: 25rem;
+    margin: 1% 0;
+}
+
+label input:checked~.title h2 {
+    color: black;
+}
+
+label input:checked~.title .plus {
+    transform: rotate(45deg);
+}
