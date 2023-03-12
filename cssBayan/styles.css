@@ -123,3 +123,20 @@ label input:checked~.title h2 {
 label input:checked~.title .plus {
     transform: rotate(45deg);
 }
+
+.container:hover h2 {
+    color: black;
+}
+
+.container:hover .plus {
+    opacity: 1;
+}
+
+.accordion__item:hover .title .plus {
+    transform: rotate(45deg);
+}
+
+.accordion__item:hover .accordion__content {
+    height: 25rem;
+    margin: 1% 0;
+}
