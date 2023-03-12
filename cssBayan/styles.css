@@ -164,10 +164,27 @@ label input:checked~.title__box .plus {
 
 
 @media screen and (max-width: 320px) {
-
     label input:checked~.accordion__content {
         height: 18em;
         margin: 1% 0;
     }
+    
+    h1 {
+        font-size: 5vw;
+    }
 
+    h2 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
 }
