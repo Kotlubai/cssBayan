@@ -124,19 +124,38 @@ label input:checked~.title .plus {
     transform: rotate(45deg);
 }
 
-.container:hover h2 {
-    color: black;
+
+@media (hover:hover) {
+    .container:hover h2 {
+        color: black;
+    }
 }
 
-.container:hover .plus {
-    opacity: 1;
+@media (hover:hover) {
+    .container:hover .plus {
+        opacity: 1;
+    }
 }
 
-.accordion__item:hover .title .plus {
-    transform: rotate(45deg);
+@media (hover:hover) {
+    .accordion__item:hover .title .plus {
+        transform: rotate(45deg);
+    }
 }
 
-.accordion__item:hover .accordion__content {
-    height: 25rem;
-    margin: 1% 0;
+@media (hover:hover) {
+    .accordion__item:hover .accordion__content {
+        height: 25rem;
+        margin: 1% 0;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    label input:checked~.accordion__content {
+        height: 18em;
+        margin: 1% 0;
+    }
+
 }
